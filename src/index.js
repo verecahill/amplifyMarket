@@ -5,6 +5,10 @@ import * as serviceWorker from "./serviceWorker";
 
 // Bring in default Element React theme
 import "element-theme-default";
+import Amplify from 'aws-amplify';
+import awsmobile from './aws-exports';
+
+Amplify.configure(awsmobile);
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
